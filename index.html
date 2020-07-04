@@ -30,6 +30,87 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/main.css">
 
+    <style>
+        .site-section {
+            padding: 5em 0;
+        }
+        
+        .section-heading {
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 10;
+        }
+        
+        .section-heading h2 {
+            position: relative;
+            font-weight: 200;
+            padding-top: 20px;
+            font-size: 30px;
+        }
+        
+        .section-heading h2 strong {
+            font-weight: 800;
+        }
+        
+        .section-heading h2:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 2px;
+            width: 50px;
+            background: #57d131;
+            z-index: -1;
+        }
+        
+        .section-heading.text-center h2:before {
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+            -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+        }
+        
+        .block-47 .block-47-image {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 70px;
+            flex: 0 0 70px;
+            display: block;
+        }
+        
+        .block-47 .block-47-image img {
+            border: 5px solid #fff;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 2px 10px 0px rgba(0, 0, 0, 0.2);
+        }
+        
+        .block-47 .block-47-quote {
+            margin-left: 40px;
+            padding: 30px;
+            background: #fff;
+            border-radius: 7px;
+            position: relative;
+            -webkit-box-shadow: 0 2px 30px -2px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 30px -2px rgba(0, 0, 0, 0.1);
+        }
+        
+        .block-47 .block-47-quote:before {
+            content: "";
+            border: 1px solid red;
+            z-index: 2;
+            position: absolute;
+            left: -15px;
+            border-width: 0 20px 20px 0;
+            border-style: solid;
+            border-color: transparent #fff transparent transparent;
+        }
+        
+        .block-47 .block-47-quote .block-47-quote-author {
+            font-size: 14px;
+            color: #666666;
+        }
+    </style>
+
 </head>
 
 <body>
@@ -39,15 +120,13 @@
             <div class="header-wrap">
                 <div class="header-top d-flex justify-content-between align-items-center">
                     <div class="logo">
-                        <a href="#home"><img src="img/logo.png" alt=""></a>
+                        <a href="#home"><img src="img/main/Jane (1).png" alt=""></a>
                     </div>
                     <div class="main-menubar d-flex align-items-center">
                         <nav class="hide">
                             <a href="#home">Home</a>
-                            <a href="#about">About Me</a>
-                            <a href="#gallery">Gallery</a>
-                            <a href="#blog">Blog</a>
-                            <a href="#contact">Contact</a>
+                            <a href="#about">My Story</a>
+                            <a href="#contact">Contact Us</a>
                             <a href="generic.html">Generic</a>
                             <a href="elements.html">Elements</a>
                         </nav>
@@ -66,14 +145,13 @@
                     <!-- Slide One - Set the background image for this slide in the line below -->
                     <div class="carousel-item active" style="background-image: url('img/main/1.jpeg')">
                         <div class="carousel-caption d-md-block">
-                            <h2 class="text-uppercase">Hook 1?</h2>
+                            <h2 class="text-uppercase">Are you tired of looking fat?</h2>
                             <br>
-                            <h2 class="text-uppercase">Hook 2?</h2>
+                            <h2 class="text-uppercase">Are you tired of pot belles?</h2>
                             <br>
-                            <h2 class="text-uppercase">Hook 3?</h2>
+                            <h2 class="text-uppercase">You want to look fit?</h2>
                             <br>
-                            <h2 class="text-uppercase">Hook 4?</h2>
-
+                            <h2 class="text-uppercase">You want to look fit?</h2>
                         </div>
                     </div>
                 </div>
@@ -88,164 +166,124 @@
         <div class="container">
             <div class="row d-flex align-items-center">
                 <div class="col-lg-6 about-left">
-                    <img class="img-fluid" src="img/about-img.jpg" alt="">
+                    <img class="img-fluid" src="img/main/3.jpeg" alt="">
                 </div>
                 <div class="col-lg-6 about-right">
                     <h1>
-                        We Believe that <br> Interior beautifies the
+                        My Story
                     </h1>
                     <p>
                         inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed
                         off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that.
                     </p>
-                    <button class="submit-btn primary-btn mt-20 text-uppercase ">Hire me now<span class="lnr lnr-arrow-right"></span></button>
+                    <p>
+                        inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed
+                        off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that.
+                    </p>
+                    <!--- <button class="submit-btn primary-btn mt-20 text-uppercase ">Hire me now<span class="lnr lnr-arrow-right"></span></button> -->
                 </div>
             </div>
         </div>
     </section>
     <!-- End About Area -->
 
-    <!-- Start gallery Area -->
-    <section class="gallery-area section-gap" id="gallery">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 pb-30 header-text">
-                    <h1 class="text-white">My Recent Photos</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.
-                    </p>
-                </div>
-            </div>
-            <div class="gal">
-                <a href="img/p1.jpg"><img src="img/p1.jpg" alt=""></a>
-                <a href="img/p2.jpg"><img src="img/p2.jpg" alt=""></a>
-                <a href="img/p3.jpg"><img src="img/p3.jpg" alt=""></a>
-                <a href="img/p4.jpg"><img src="img/p4.jpg" alt=""></a>
-                <a href="img/p5.jpg"><img src="img/p5.jpg" alt=""></a>
-                <a href="img/p6.jpg"><img src="img/p6.jpg" alt=""></a>
-                <a href="img/p7.jpg"><img src="img/p7.jpg" alt=""></a>
-                <a href="img/p8.jpg"><img src="img/p8.jpg" alt=""></a>
-                <a href="img/p9.jpg"><img src="img/p9.jpg" alt=""></a>
-                <a href="img/p10.jpg"><img src="img/p10.jpg" alt=""></a>
-                <a href="img/p11.jpg"><img src="img/p11.jpg" alt=""></a>
-                <a href="img/p12.jpg"><img src="img/p12.jpg" alt=""></a>
-                <a href="img/p13.jpg"><img src="img/p13.jpg" alt=""></a>
-                <a href="img/p14.jpg"><img src="img/p14.jpg" alt=""></a>
-                <a href="img/p15.jpg"><img src="img/p15.jpg" alt=""></a>
-                <a href="img/p16.jpg"><img src="img/p16.jpg" alt=""></a>
-
-            </div>
-        </div>
-    </section>
 
     <!-- Start callto Area -->
     <section class="callto-area pt-50 pb-50">
         <div class="container">
             <div class="row">
                 <div class="col-lg-9 callto-left">
-                    <h1 class="text-uppercase">Not sure about my charge?</h1>
+                    <h1 class="text-uppercase">Want to enroll now?</h1>
                 </div>
                 <div class="col-lg-3 callto-right">
-                    <a href="#" class="btn-white btn text-uppercase">Donate Now</a>
+                    <a href="#" class="btn-white btn text-uppercase">Register Now</a>
                 </div>
             </div>
         </div>
     </section>
     <!-- End callto Area -->
 
-    <!-- Start blog Area -->
-    <section class="blog-area section-gap" id="blog">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-md-8 pb-30 header-text">
-                    <h1>Our Recent Blogs</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut <br> labore et dolore magna aliqua.
-                    </p>
+    <section class="site-section bg-light">
+        <div class="container-fluid">
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <div class="section-heading text-center">
+                        <h2>Client <strong>Testimonial</strong></h2>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="single-blog col-lg-4 col-md-4">
+                <div class="col-md-6">
 
-                    <img class="f-img img-fluid mx-auto" src="img/b1.jpg" alt="">
-                    <h4>
-                        <a href="#">Portable Fashion for young women</a>
-                    </h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt="">
-                            <a href="#"><span>Mark Wiens</span></a>
+                    <div class="block-47 d-flex mb-5">
+                        <div class="block-47-image">
+                            <img src="img/p3.jpg" alt="Image placeholder" class="img-fluid">
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
-                        </div>
+                        <blockquote class="block-47-quote">
+                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            <cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+                        </blockquote>
                     </div>
+
                 </div>
-                <div class="single-blog col-lg-4 col-md-4">
-                    <img class="f-img img-fluid mx-auto" src="img/b2.jpg" alt="">
-                    <h4>
-                        <a href="#">Summer ware are coming</a>
-                    </h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip exea. commodo consequat. Duis aute irure dolor
-                        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    </p>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt="">
-                            <a href="#"><span>Mark Wiens</span></a>
+                <div class="col-md-6">
+
+                    <div class="block-47 d-flex mb-5">
+                        <div class="block-47-image">
+                            <img src="img/p3.jpg" alt="Image placeholder" class="img-fluid">
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
-                        </div>
+                        <blockquote class="block-47-quote">
+                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            <cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+                        </blockquote>
                     </div>
+
                 </div>
-                <div class="single-blog col-lg-4 col-md-4">
-                    <img class="f-img img-fluid mx-auto" src="img/b3.jpg" alt="">
-                    <h4>
-                        <a href="#">Summer ware are coming</a>
-                    </h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
-                    </p>
-                    <div class="bottom d-flex justify-content-between align-items-center flex-wrap">
-                        <div>
-                            <img class="img-fluid" src="img/user.png" alt="">
-                            <a href="#"><span>Mark Wiens</span></a>
+
+                <div class="col-md-6">
+
+                    <div class="block-47 d-flex mb-5">
+                        <div class="block-47-image">
+                            <img src="img/p3.jpg" alt="Image placeholder" class="img-fluid">
                         </div>
-                        <div class="meta">
-                            13th Dec
-                            <span class="lnr lnr-heart"></span> 15
-                            <span class="lnr lnr-bubble"></span> 04
-                        </div>
+                        <blockquote class="block-47-quote">
+                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            <cite class="block-47-quote-author">&mdash; Ethan McCown, CEO <a href="#">XYZ Inc.</a></cite>
+                        </blockquote>
                     </div>
+
                 </div>
+                <div class="col-md-6">
+
+                    <div class="block-47 d-flex mb-5">
+                        <div class="block-47-image">
+                            <img src="img/p3.jpg" alt="Image placeholder" class="img-fluid">
+                        </div>
+                        <blockquote class="block-47-quote">
+                            <p>&ldquo;Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.&rdquo;</p>
+                            <cite class="block-47-quote-author">&mdash; Craig Gowen, CEO <a href="#">XYZ Inc.</a></cite>
+                        </blockquote>
+                    </div>
+
+                </div>
+
             </div>
         </div>
     </section>
-    <!-- end blog Area -->
 
     <!-- Start contact Area -->
     <section class="contact-area" id="contact">
         <div class="container-fluid">
             <div class="row d-flex justify-content-end align-items-center">
                 <div class="col-lg-5 col-md-12 contact-left no-padding">
-                    <img class="img-fluid" src="img/contact-img.jpg" alt="">
+                    <img class="img-fluid" src="img/main/6.jpeg" alt="">
                 </div>
                 <div class="col-lg-7 col-md-12 contact-right no-padding">
                     <h1>Send me Message</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Drop a message for us and get instant response!
                     </p>
-                    <form class="booking-form" id="myForm" action="contact.php">
+                    <form class="booking-form" id="myForm">
                         <div class="row">
                             <div class="col-lg-12 d-flex flex-column">
                                 <input name="name" placeholder="Your name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Your name'" class="form-control mt-20" required="" type="text" required>
@@ -258,7 +296,7 @@
                             </div>
 
                             <div class="col-lg-12 d-flex justify-content-end send-btn">
-                                <button class="submit-btn primary-btn mt-20 text-uppercase ">confirm booking<span class="lnr lnr-arrow-right"></span></button>
+                                <button class="submit-btn primary-btn mt-20 text-uppercase">Send Message<span class="lnr lnr-arrow-right"></span></button>
                             </div>
 
                             <div class="alert-msg"></div>
@@ -275,12 +313,11 @@
     <footer class="footer-area">
         <div class="container">
             <div class="row footer-bottom d-flex justify-content-between">
-                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2017 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="#">Colorlib</a></p>
+                <p class="col-lg-8 col-sm-12 footer-text m-0 text-white">Copyright © 2020 All rights reserved | Developed by <a href="#">Ariyo Ayomide</a></p>
                 <div class="col-lg-4 col-sm-12 footer-social">
                     <a href="#"><i class="fa fa-facebook"></i></a>
                     <a href="#"><i class="fa fa-twitter"></i></a>
-                    <a href="#"><i class="fa fa-dribbble"></i></a>
-                    <a href="#"><i class="fa fa-behance"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
                 </div>
             </div>
         </div>

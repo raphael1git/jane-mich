@@ -65,7 +65,7 @@
 body {
     color: #777777;
     font-family: "Poppins", sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.625em;
     position: relative;
@@ -1943,8 +1943,8 @@ body {
 }
 
 .menu-bar span {
-    color: #fff;
-    font-size: 24px;
+    color: #e7a12b;
+    font-size: 30px;
 }
 
 .main-menubar {
@@ -2047,15 +2047,15 @@ nav a:hover {
 .callto-area .btn-white:hover,
 .footer-social a:hover,
 .generic-banner {
-    background-image: -moz-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
-    background-image: -webkit-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
-    background-image: -ms-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
+    background-image: -moz-linear-gradient(0deg, #7a77ff 0%, #ea597a 100%);
+    background-image: -webkit-linear-gradient(0deg, #7a77ff 0%, #ea597a 100%);
+    background: -ms-linear-gradient(0deg, #7a77ff 0%, #ea597a 100%);
 }
 
 .p1-gradient-color {
-    background: -moz-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
-    background: -webkit-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
-    background: -ms-linear-gradient(0deg, #7a77ff 0%, #8cfe86 100%);
+    background: -moz-linear-gradient(0deg, #7a77ff 0%, #ea597a 100%);
+    background: -webkit-linear-gradient(0deg, #7a77ff 0%, #ea597a 100%);
+    background: -ms-linear-gradient(0deg, #7a77ff 0%, #ea597a 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -2201,8 +2201,8 @@ nav a:hover {
 
 .is-sticky .default-header {
     height: 72px !important;
-    background-color: #222;
-    border-bottom: 1px solid #323232;
+    /* background-color: #222;
+    border-bottom: 1px solid #323232; */
 }
 
 .banner-area {
